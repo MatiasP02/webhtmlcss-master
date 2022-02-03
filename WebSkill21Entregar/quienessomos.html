@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>WebSkill</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<a name="arriba"></a>
+<body>
+  <header class="bg-menunav">
+    <nav class="navbar navbar-expand-md navbar-light bg-menunav">
+      <a class="navbar-brand" href="index.html"><img src="img/logos/logo.png" alt="" width="64"></a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-secondary" href="#" id="dropdownId" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Selecciona Categoría</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Anfibios</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Aves</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Mamíferos</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Peces</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="reptiles.html">Reptiles</a>
+              <div class="dropdown-divider"></div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="#" data-toggle="modal" data-target="#modalregistro">Registrarse</a>
+            <div class="modal fade" id="modalregistro" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content bg-home">
+                  <p>
+                  <h5 class="modal-title text-center">Registro de usuario</h5>
+                  </p>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group border bg-white p-2 rounded">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" name="" id="" class="form-control mb-3" placeholder="Usuario"
+                          aria-describedby="helpId">
+
+                        <label for="usuario">Contraseña</label>
+                        <input type="password" name="" id="" class="form-control mb-3" placeholder="Contraseña"
+                          aria-describedby="helpId">
+
+                        <label for="usuario">Repite la contraseña</label>
+                        <input type="password" name="" id="" class="form-control mb-3" placeholder="Contraseña"
+                          aria-describedby="helpId">
+
+                        <label for="usuario">Email</label>
+                        <input type="email" name="" id="" class="form-control mb-3" placeholder="email@gmail.com"
+                          aria-describedby="helpId">
+
+                        <label for="usuario">Dirección</label>
+                        <input type="text" name="" id="" class="form-control mb-3" placeholder="Talavera"
+                          aria-describedby="helpId">
+
+                        <label for="usuario">Teléfono</label>
+                        <input type="number" name="" id="" class="form-control mb-3" placeholder="1111"
+                          aria-describedby="helpId">
+                        <button type="button" class="btn btn-success btn-lg btn-block"
+                          data-dismiss="modal">Registrarse</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="#" data-toggle="modal" data-target="#modallogin">Iniciar sesión</a>
+            <div class="modal fade" id="modallogin" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+              aria-hidden="true">
+              <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content bg-home">
+                  <h5 class="modal-title text-center">INICIA SESION</h5>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group border bg-white p-2 rounded">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" name="" id="" class="form-control mb-3" placeholder="Alicia"
+                          aria-describedby="helpId">
+                        <label for="usuario">Contraseña</label>
+                        <input type="password" name="" id="" class="form-control mb-3" placeholder="Contraseña"
+                          aria-describedby="helpId">
+                        <button type="button" class="btn btn-success btn-lg btn-block p-1"
+                          data-dismiss="modal">Entrar</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="container my-5">
+    <div class="accordion" id="accordionExample">
+      <div class="container m-0 p-0">
+        <h2>Quiénes somos</h2>
+        <p><strong>catalogodeanimales.es</strong> es un medio digital independiente y liberal. Somos una
+          redacción
+          que
+          trabaja para publicar información de animales, con rigor y libertad. Nuestro compromiso es con la
+          verdad,
+          sin fanatismos. Nuestro ideario tiene tres líneas rojas innegociables: ser libres, ser fiables y ser
+          honestos.</p>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne"
+              aria-expanded="false" aria-controls="collapseOne">
+              ¿Qué queremos hacer?
+            </button>
+          </h2>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <p>El proyecto nació con el objetivo de ayudar estudiantes y a todas aquellas personas que
+              conviven
+              con
+              animales y darles los recursos necesarios para mejorar la convivencia entre ellos. Poco
+              después,
+              y
+              viendo la necesidad de dar respuesta a dudas más complejas, se añadieron veterinarios,
+              etólogos,
+              biólogos, adiestradores, etc., para ofrecer un contenido más específico y riguroso.
+              Actualmente,
+              somos más de 20 profesionales expertos en el mundo animal.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
+              Nuestro propósito
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            <p>En <strong>catalogoanimales.es</strong> trabajamos con tres objetivos claros: educar,
+              informar y
+              concienciar. Nos
+              esforzamos cada día para publicar contenido útil y de calidad, que nos permita ayudar a
+              todos
+              nuestros lectores a convertirse en auténticos expertos animales e informar para mejorar la
+              situación
+              actual del mundo animal, combatiendo el abandono, el maltrato y la explotación.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+              aria-expanded="false" aria-controls="collapseThree">
+              ¿Qué hacemos en nuestra web?
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            <p>Para lograr los objetivos propuestos, compartimos contenido a diario elaborado por expertos y
+              profesionales del sector. A través de nuestros artículos, ayudamos a entender mejor el
+              comportamiento de los animales de compañía y cualquier otro animal, para establecer rutinas
+              positivas para todos, resolvemos dudas, mostramos la realidad de las especies en peligro de
+              extinción y mucho más.</p>
+            <p>Todo el contenido se actualiza constantemente y se aborda desde una perspectiva animalista,
+              respetando en todo momento las necesidades naturales de cada especie. Además, colaboramos
+              activamente con asociaciones, protectoras, fundaciones, clínicas veterinarias, etc., para
+              fomentar
+              la adopción responsable de animales, luchar contra el abandono y resaltar la importancia de
+              acudir a
+              profesionales siempre que sea necesario. En este sentido, nuestros artículos son una guía
+              que no
+              sustituyen la atención veterinaria o el trabajo realizado por un educador o adiestrador
+              canino.
+            </p>
+
+            <p>Con todo ello, en <strong>catalogoanimales.es</strong> aspiramos a convertirnos en la página
+              web
+              de referencia del
+              mundo animal de habla hispana para llegar a un número mayor de personas y, entre todos,
+              mejorar
+              la
+              calidad de vida de los animales.</p>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-footer">
+    <div class="container">
+      <h2 class="text-center py-4">CLM SKILL WEB - 2021</h2>
+      <div class="row">
+        <div class="col-md-2 mb-3 text-center">
+          <a href="#arriba"><button type="button" class="btn btn-success">SUBIR</button></a>
+        </div>
+        <div class="col-md-4 mb-2 text-center">
+          <h6>Centros participantes</h6>
+          <br>
+          <p><a class="text-white" href="http://www.ies-azarquiel.es/">I.E.S. Azarquiel.</p></a>
+          <p><a class="text-white" href="http://www.iesjuanbosco.es/">I.E.S. Juan Bosco.</a></p>
+          <p><a class="text-white" href="http://iesmaestredecalatrava.es/">I.E.S. Maestre de Calatrava.</a></p>
+          <p><a class="text-white" href="https://cifpvirgendegracia.com/">C.I.F.P. Virgen de Gracia.</a></p>
+          <p><a class="text-white" href="http://www.iesgregorioprieto.com/">I.E.S. Gregorio Prieto</a></p>
+          <p><a class="text-white" href="https://www.iespedromercedes.es/">I.E.S. Pedro Mercedes. </a></p>
+          <p><a class="text-white" href="http://briandademendoza.es/">I.E.S. Brianda de Mendoza.</a></p>
+          <p><a class="text-white" href="http://riberadeltajo.es/nuevaweb/">I.E.S. Ribera del Tajo.</a></p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <p class=" text-center"><a class="text-white" href="quienessomos.html">Quienes somos</a></p>
+
+          <p class=" text-center"><a class="text-white" href="" data-toggle="modal"
+              data-target="#modalPrivacidad">Privacidad</a></p>
+          <div class="modal fade" id="modalPrivacidad" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h5 class="modal-title">Privacidad</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h2>Términos y Condiciones de uso</h2>
+                  <h3>1. Datos generales</h3>
+                  <p><strong>De acuerdo con el artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la
+                      Sociedad de la
+                      Información y de Comercio Electrónico ponemos a su disposición los siguientes
+                      datos:</strong></p>
+
+                  <p>catalogodeanimales.es está domiciliada en la calle Ronda S/N, con CIF B556677. Inscrita en el
+                    Registro Mercantil de Talavera de la Reina, Vol. xxxx, Folio xxxx, Hoja xxxx, Inscripción xxx.
+                  </p>
+                  <p>En la web catalogodeanimales.es hay una serie de contenidos de carácter informativo sobre
+                    animales,
+                    especies, y características. <strong>Su principal objetivo</strong> es facilitar a los clientes
+                    y al público en
+                    general, la información relativa a la empresa, a los productos y servicios que se ofrecen.</p>
+
+                  <h3>2. Política de privacidad</h3>
+
+                  <p>En cumplimiento de lo dispuesto en la <strong>Ley Orgánica 15/1999, de 13 de Diciembre, de
+                      Protección de
+                      Datos de Carácter Personal (LOPD)</strong> se informa al usuario que todos los datos que nos
+                    proporcione
+                    serán incorporados a un fichero, creado y mantenido bajo la responsabilidad de
+                    catalogodeanimales.es.</p>
+                  <p>Siempre <strong>se va a respetar la confidencialidad de sus datos personales</strong> que sólo
+                    serán utilizados con
+                    la finalidad de gestionar los servicios ofrecidos, atender a las solicitudes que nos plantee,
+                    realizar tareas administrativas, así como remitir información técnica, comercial o publicitaria
+                    por
+                    vía ordinaria o electrónica.</p>
+                  <p>Para ejercer sus derechos de oposición, rectificación o cancelación deberá dirigirse a la sede de
+                    la
+                    empresa C/Ronda S/N de Talavera de la Reina, escribirnos al siguiente correo
+                    contacto@catalogodeanimales.es o llámanos al 777888999.</p>
+
+                  <h3>3. Condiciones de uso</h3>
+
+                  <p><strong>Las condiciones de acceso y uso del presente sitio web se rigen por la legalidad vigente
+                      y por el principio de buena fe </strong>comprometiéndose el usuario a realizar un buen uso
+                    de la web. No se permiten conductas que vayan contra la ley, los derechos o intereses de
+                    terceros.</p>
+                  <p>Ser usuario de la web de catalogodeanimales.es implica que reconoce haber leído y aceptado las
+                    presentes condiciones y lo que las extienda la normativa legal aplicable en esta materia. Si por
+                    el motivo que fuere no está de acuerdo con estas condiciones no continúe usando esta web.</p>
+                  <p>Cualquier tipo de notificación y/o reclamación solamente será válida por notificación escrita y/o
+                    correo certificado.</p>
+                  <h3>
+                    4. Responsabilidades</h3>
+                  <p><strong>catalogodeanimales.es, no se hace responsable de la información y contenidos almacenados
+                      en foros, redes sociales o cualesquier otro medio </strong>que permita a terceros publicar
+                    contenidos de forma independiente en la página web del prestador.</p>
+                  <p>Sin embargo, teniendo en cuenta los art. 11 y 16 de la LSSI-CE, catalogodeanimales.es se
+                    compromete a la retirada o en su caso bloqueo de aquellos contenidos que pudieran afectar o
+                    contravenir la legislación nacional o internacional, derechos de terceros o la moral y el orden
+                    público.</p>
+                  <p><strong>Tampoco la empresa se responsabilizará de los daños y perjuicios que se produzcan por
+                      fallos o malas configuraciones del software instalado en el ordenador del internauta.
+                    </strong>Se excluye toda responsabilidad por alguna incidencia técnica o fallo que se produzca
+                    cuando el usuario se conecte a internet. Igualmente no se garantiza la inexistencia de
+                    interrupciones o errores en el acceso al sitio web.</p>
+                  <p>Así mismo, <strong>catalogodeanimales.es se reserva el derecho a actualizar, modificar o eliminar
+                      la información contenida en su página web, </strong>así como la configuración o presentación
+                    del mismo, en cualquier momento sin asumir alguna responsabilidad por ello.</p>
+                  <p>Le comunicamos que cualquier precio que pueda ver en nuestra web será solamente orientativo. Si
+                    el usuario desea saber con exactitud el precio o si el producto en el momento actual cuenta con
+                    alguna oferta de la cual se puede beneficiar ha de acudir a alguna de las tiendas físicas con
+                    las que cuenta catalogodeanimales.es.</p>
+                  <h3>5. Propiedad intelectual e industrial.</h3>
+                  <p><strong>catalogodeanimales.es es titular de todos los derechos sobre el software de la
+                      publicación digital así como de los derechos de propiedad industrial e intelectual referidos
+                      a los contenidos que se incluyan, </strong>a excepción de los derechos sobre productos y
+                    servicios de carácter público que no son propiedad de esta empresa.</p>
+                  <p><strong>Ningún material publicado en esta web podrá ser reproducido, copiado o publicado
+                    </strong>sin el consentimiento por escrito de catalogodeanimales.es.</p>
+                  <p>Toda la información que se reciba en la web, como comentarios, sugerencias o ideas, se
+                    considerará cedida a catalogodeanimales.es de manera gratuita. No debe enviarse información que
+                    NO pueda ser tratada de este modo.</p>
+                  <p>Todos los productos y servicios de estas páginas que NO son propiedad de catalogodeanimales.es
+                    son marcas registradas de sus respectivos propietarios y son reconocidas como tales por nuestra
+                    empresa. Solamente aparecen en la web de catalogodeanimales.es a efectos de promoción y de
+                    recopilación de información. Estos propietarios pueden solicitar la modificación o eliminación
+                    de la información que les pertenece.</p>
+                  <h3>6. Política de cookies.</h3>
+                  <p><strong>catalogodeanimales.es por su propia cuenta o la de un tercero contratado para prestación
+                      de servicios de medición, pueden utilizar cookies cuando el usuario navega por el sitio web.
+                      Las cookies son ficheros enviados al navegador por medio de un servicio web con la finalidad
+                      de registrar las actividades del usuario durante su tiempo de navegación.</strong></p>
+                  <p>Las cookies utilizadas se asocian únicamente con un usuario anónimo y su ordenador, y no
+                    proporcionan por sí mismas los datos personales del usuario.</p>
+                  <p><strong>Mediante el uso de las cookies resulta posible que el servidor donde se encuentra la web
+                      reconozca el navegador web utilizado por el usuario con la finalidad de que la navegación
+                      sea más sencilla. </strong>Se utilizan también para medir la audiencia y parámetros del
+                    tráfico, controlar el proceso y número de entradas.</p>
+                  <p>El usuario tiene la posibilidad de configurar su navegador para ser avisado de la recepción de
+                    cookies y para impedir su instalación en su equipo. Por favor consulte las instrucciones y
+                    manuales de su navegador para ampliar esta información.</p>
+                  <p>Para utilizar el sitio web no es necesario que el usuario permita la instalación de las cookies
+                    enviadas al sitio web, o el tercero que actúe en su nombre, sin perjuicio de que sea necesario
+                    que el usuario inicie una sesión tal en cada uno de los servicios cuya prestación requiera el
+                    previo registro.</p>
+                  <p>En todo caso <strong>las cookies tienen un carácter temporal </strong>con la única finalidad de
+                    hacer más eficaz su transmisión ulterior. En ningún caso se utilizará cookies para recoger
+                    información de carácter personal.</p>
+
+
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-dismiss="modal">Aceptar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class=" text-center"><a class="text-white " href="" data-toggle="modal"
+              data-target="#modalContacto">Contacto</a></p>
+          <div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-labelledby="modalContacto"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content bg-home">
+                <div class="modal-header d-block text-center">
+                  <h5 class="modal-title">Escribe un comentario para contactar</h5>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Nombre:</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Tu e-mail:</label>
+                      <input type="email" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Tu comentario:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary btn-block btn-success"
+                    data-dismiss="modal">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mb-2 text-center">
+          <a href="index.html"><button type="button" class="btn btn-success">HOME</button></a>
+        </div>
+      </div>
+      <p class="text-center font-weight-bold py-4">Catálogo de animales &copy; NOMBRE ALUMNO</p>
+    </div>
+
+  </footer>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
